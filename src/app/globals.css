@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+/*
+  BOT THAT LYFE — Kinetic Spec design tokens.
+  Source: assets/design/stitch-export/kinetic_spec/DESIGN.md
+  Clean techwear system: navy/obsidian ground, raw auric amber accent,
+  zero-radius geometry, chamfered corners, offset structural shadows.
+*/
+
+:root {
+  --color-ink: #0b1325; /* Tech Navy & Obsidian — primary */
+  --color-ink-deep: #080d18; /* deeper obsidian for full-bleed blocks */
+  --color-gold: #c59b27; /* Raw Auric Amber — secondary / accent */
+  --color-gold-soft: #e5c07b; /* Light Gold Tint — tertiary / hairline accents */
+  --color-gold-bright: #eec14b; /* hover / active gold */
+
+  --color-surface: #f8fafc;
+  --color-surface-0: #ffffff;
+  --color-surface-1: #f2f4f6;
+  --color-surface-2: #eceef0;
+  --color-surface-3: #e6e8ea;
+  --color-surface-4: #e0e3e5;
+
+  --color-ink-soft: #45464c; /* on-surface-variant */
+  --color-line: #c6c6cd; /* outline-variant */
+  --color-line-strong: #76777d; /* outline */
+
+  --color-danger: #ef4444;
+  --color-success: #10b981;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-deep: var(--color-ink-deep);
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+  --color-gold-bright: var(--color-gold-bright);
+
+  --color-surface: var(--color-surface);
+  --color-surface-0: var(--color-surface-0);
+  --color-surface-1: var(--color-surface-1);
+  --color-surface-2: var(--color-surface-2);
+  --color-surface-3: var(--color-surface-3);
+  --color-surface-4: var(--color-surface-4);
+
+  --color-ink-soft: var(--color-ink-soft);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+
+  --color-danger: var(--color-danger);
+  --color-success: var(--color-success);
+
+  --font-display: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+
+  --text-display-xl: 3.5rem;
+  --text-display-xl--line-height: 1;
+  --text-display-xl--letter-spacing: -0.03em;
+
+  --text-display-lg: 2.75rem;
+  --text-display-lg--line-height: 1.05;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-spec: 0.6875rem;
+  --text-spec--line-height: 1rem;
+  --text-spec--letter-spacing: 0.02em;
+
+  --text-tag: 0.75rem;
+  --text-tag--line-height: 1rem;
+  --text-tag--letter-spacing: 0.06em;
+
+  --text-tag-sm: 0.625rem;
+  --text-tag-sm--line-height: 0.875rem;
+  --text-tag-sm--letter-spacing: 0.1em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-gold-soft);
+  color: var(--color-ink);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 45-degree chamfered corner — tactical gear cutout motif. */
+@utility chamfer {
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  );
+}
+
+@utility chamfer-sm {
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+/* Engineered offset drop-shadow — rejects ambient blur in favor of a physical, chassis-like displacement. */
+@utility offset-shadow {
+  box-shadow: 4px 4px 0 0 var(--color-ink);
+}
+
+@utility offset-shadow-gold {
+  box-shadow: 3px 3px 0 0 var(--color-gold);
+}
+
+@utility offset-press {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+
+  &:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 0 var(--color-ink);
+  }
+}
