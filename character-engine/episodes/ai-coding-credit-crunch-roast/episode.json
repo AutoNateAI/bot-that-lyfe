@@ -1,0 +1,161 @@
+{
+  "episode": "ai-coding-credit-crunch-roast",
+  "title": "The AI Coding Credit Crunch (feat. MHacks)",
+  "cta_url": "https://botthatlyfe.com/",
+  "runtime_target_sec": 55,
+  "background_meme": {
+    "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/background.png",
+    "prompt": "A dim, moody late-night computer lab/hackathon floor at 3am, rows of glowing laptop screens with faint red warning-glow accents, string lights overhead, empty energy drink cans, dark negative space in the center/lower half for hosts, no people, no text, no logos."
+  },
+  "intro_meme": {
+    "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/intro.png",
+    "prompt": "A large ominous fuel/credit gauge with the needle swinging hard into a red 'EMPTY' zone, sparks flying off the pin, dark navy background, bold white outlined caption exactly reading 'THE METER'S RUNNING OUT'."
+  },
+  "outro_meme": {
+    "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/outro.png",
+    "prompt": "A cracked laptop screen showing a credit gauge needle stuck at zero, a small paper IOU tag hanging off the corner of the screen, dark navy background, bold white outlined caption exactly reading 'IOU: TWENTY MINUTES'."
+  },
+  "sources": [
+    { "id": "s1", "url": "https://startupfortune.com/developers-flee-claude-code-rate-limits-for-openai-codex-as-throughput-war-heats-up/", "fact": "A Reddit-sourced benchmark posted April 8, 2026 found Claude Code (Opus 4.6, two parallel sessions) hit 100% of its 5-hour usage limit in 20 minutes, while Codex (GPT-5.4) ran a full 90-minute session without hitting any cap." },
+    { "id": "s2", "url": "https://explainx.ai/blog/claude-usage-limits-2026-timeline-explained", "fact": "On September 14, 2026, Anthropic replaced its temporary 50% Claude Code weekly boost with a 'permanent' 25% increase, which nets out to roughly a 17% cut versus the prior meter for most paying users." },
+    { "id": "s3", "url": "https://community.openai.com/t/purchased-1000-credits-gone-in-under-an-hour/1378847", "fact": "A Codex user (forum handle Vegals) reported buying 1,000 credits that were gone within roughly 30-60 minutes, with the usage analytics page frozen/stuck showing no way to verify what had actually consumed them." },
+    { "id": "s4", "url": "https://www.mhacks.org/", "fact": "MHacks Fall 2026 runs October 3-4 in Ann Arbor, MI, free to attend, with 1,000+ student builders and sponsors including AWS, Meta, SpaceX, Capital One, and D.E. Shaw & Co." }
+  ],
+  "lines": [
+    {
+      "n": 1,
+      "speaker": "nate",
+      "mood": "smile",
+      "text": "Yoooo, guess what the actual fuck 'unlimited AI coding' means right now — your session's dead before lunch.",
+      "gesture": "open_hands",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line01.png",
+        "prompt": "A cracked laptop screen displaying a credit gauge already sitting in the empty red zone, small sparks flying off the corner, dark background, bold white outlined caption exactly reading 'SESSION: DEAD BEFORE LUNCH'."
+      }
+    },
+    {
+      "n": 2,
+      "speaker": "kai",
+      "mood": "brows_up",
+      "text": "There's a Reddit benchmark from April: Claude Code, two sessions, torched the five-hour limit in twenty minutes.",
+      "cite": ["s1"],
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line02.png",
+        "prompt": "A stopwatch reading '20:00' next to a large red gauge slammed to empty, a '5 HOUR LIMIT' label crossed out with a thick red X, dark background, bold white outlined caption exactly reading '5 HOURS TO 20 MINUTES'."
+      }
+    },
+    {
+      "n": 3,
+      "speaker": "nate",
+      "mood": "halflid",
+      "text": "Twenty minutes. That's not a coding session, that's a damn Uber ride, my ninja.",
+      "gesture": "shrug",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line03.png",
+        "prompt": "A cartoon rideshare car icon with a laptop strapped into the back seat like a passenger, a fare meter on the dashboard ticking up fast, dark background, bold white outlined caption exactly reading 'THIS IS AN UBER NOW'."
+      }
+    },
+    {
+      "n": 4,
+      "speaker": "kai",
+      "mood": "brows_up",
+      "text": "And this month Anthropic swapped their fifty percent boost for a 'permanent' twenty-five percent one — do the math, that's a seventeen percent cut.",
+      "cite": ["s2"],
+      "voice_instructions": "sarcastic emphasis landing hard on the word 'permanent'",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line04.png",
+        "prompt": "A big green balloon reading '+50%' getting popped by a pin labeled '-17%', confetti turning into falling debris mid-air, dark background, bold white outlined caption exactly reading 'BOOST, MEET CUT'."
+      }
+    },
+    {
+      "n": 5,
+      "speaker": "nate",
+      "mood": "halflid",
+      "text": "They called a cut an upgrade. Classic.",
+      "gesture": "rest_stand",
+      "voice_instructions": "flat, deadpan delivery",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line05.png",
+        "prompt": "A small gold trophy labeled 'UPGRADE' sitting on top of a shrinking pie chart, dark background, bold white outlined caption exactly reading 'SAME TROPHY, SMALLER PIE'."
+      }
+    },
+    {
+      "n": 6,
+      "speaker": "kai",
+      "mood": "neutral",
+      "text": "So devs ran to Codex instead. Cool — it just crossed twenty million users.",
+      "gesture": "open_hands",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line06.png",
+        "prompt": "A rocket made of stacked glowing laptops blasting off, a digital counter beside it reading '20,000,000 USERS', dark navy background, bold white outlined caption exactly reading 'WELCOME ABOARD'."
+      }
+    },
+    {
+      "n": 7,
+      "speaker": "nate",
+      "mood": "brows_up",
+      "text": "Except some guy bought a thousand credits, gone in under an hour — checks his usage page, and it's just frozen. Not even a receipt.",
+      "cite": ["s3"],
+      "voice_instructions": "land hard on the word 'frozen'",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line07.png",
+        "prompt": "An ice-crusted computer screen displaying '0 CREDITS LEFT' with a loading spinner frozen mid-spin, a confused cartoon developer scratching his head next to it, dark background, bold white outlined caption exactly reading 'USAGE PAGE: FROZEN'."
+      }
+    },
+    {
+      "n": 8,
+      "speaker": "kai",
+      "mood": "halflid",
+      "text": "Both companies got their hand in the same broken meter.",
+      "gesture": "shrug",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line08.png",
+        "prompt": "Two generic robotic hands, no branding or logos, both reaching into the same cracked glass gauge, sparks flying out of the crack, dark background, bold white outlined caption exactly reading 'SAME BROKEN METER'."
+      }
+    },
+    {
+      "n": 9,
+      "speaker": "nate",
+      "mood": "brows_up",
+      "text": "Now put that meter in Ann Arbor, October third — a thousand students, twenty-four hours, AWS, Meta, SpaceX, Capital One literally in the room.",
+      "cite": ["s4"],
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line09.png",
+        "prompt": "A packed hackathon floor from above, rows of glowing laptops, a huge countdown clock overhead reading '24:00:00', dark navy background, bold white outlined caption exactly reading '1,000 BUILDERS. ONE CLOCK.'"
+      }
+    },
+    {
+      "n": 10,
+      "speaker": "kai",
+      "mood": "brows_up",
+      "text": "Two trillion-dollar companies can't keep the lights on for twenty minutes, and it's your career on the line for it.",
+      "gesture": "explain_chop",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line10.png",
+        "prompt": "A row of generic corporate recruiting booths with plain blank banners, no logos, watching a giant broken gauge displayed on a jumbotron above a crowded hackathon floor, dark convention lighting, bold white outlined caption exactly reading 'THEY'RE STILL WATCHING'."
+      }
+    },
+    {
+      "n": 11,
+      "speaker": "nate",
+      "mood": "smile",
+      "text": "So build backup plans, not blind faith — and at least look right while the meter's running out.",
+      "gesture": "rest_stand",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line11.png",
+        "prompt": "A laptop glowing on a desk at 3am with a small life-preserver ring icon floating beside it, a hoodie draped over the empty chair, warm desk lamp light in a dark room, bold white outlined caption exactly reading 'HAVE A PLAN B'."
+      }
+    }
+  ]
+}
