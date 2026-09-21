@@ -29,3 +29,11 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Colors, type scale, and the zero-radius/chamfer/offset-shadow techwear treatments live in
 `src/app/globals.css` under `@theme`, sourced from the Kinetic Spec.
+
+## Video content — Nate & Kai
+
+`character-engine/` is a separate Python pipeline (rigged 2D characters, OpenAI TTS,
+Rhubarb lip-sync, ffmpeg) for producing Nate & Kai YouTube videos and Reels aimed at
+college CS students. See `character-engine/README.md` for setup and
+`.claude/skills/nate-kai-video-director/` / `nate-kai-reel-director/` for the actual
+scripting/rendering workflow. Unrelated to the Next.js app above — no shared code or deploy path.
