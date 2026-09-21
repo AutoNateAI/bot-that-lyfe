@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/2lfx2l6c50t99.css","style"]
+:HL["/_next/static/chunks/0uo8lrtqvekpv.css","style"]
 :HL["/_next/static/media/0c89a48fa5027cee-s.p.2cyn07wtgehh0.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"products","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"performance-long-sleeve","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"vV1klWpSpZLEUzjQgMJ2x"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"products","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"performance-long-sleeve","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"jODELSpK-i-SpRgqTWoIO"}
