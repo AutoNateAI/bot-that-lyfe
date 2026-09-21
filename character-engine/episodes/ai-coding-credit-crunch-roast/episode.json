@@ -26,8 +26,9 @@
       "n": 1,
       "speaker": "nate",
       "mood": "smile",
-      "text": "Yoooo, guess what the actual fuck 'unlimited AI coding' means right now — your session's dead before lunch.",
+      "text": "Yoooo, guess what the actual fuck 'unlimited AI coding' looks like right now — your session's dead before lunch.",
       "gesture": "open_hands",
+      "emphasis": [16, 18],
       "screen": {
         "type": "meme",
         "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line01.png",
@@ -64,7 +65,8 @@
       "mood": "brows_up",
       "text": "And this month Anthropic swapped their fifty percent boost for a 'permanent' twenty-five percent one — do the math, that's a seventeen percent cut.",
       "cite": ["s2"],
-      "voice_instructions": "sarcastic emphasis landing hard on the word 'permanent'",
+      "emphasis": [11, 23],
+      "voice_instructions": "sarcastic, air-quotes energy on 'permanent'",
       "screen": {
         "type": "meme",
         "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line04.png",
@@ -102,7 +104,8 @@
       "mood": "brows_up",
       "text": "Except some guy bought a thousand credits, gone in under an hour — checks his usage page, and it's just frozen. Not even a receipt.",
       "cite": ["s3"],
-      "voice_instructions": "land hard on the word 'frozen'",
+      "emphasis": [20],
+      "pauses": "A beat of dead air right before 'frozen' — let it land alone.",
       "screen": {
         "type": "meme",
         "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line07.png",
@@ -127,6 +130,7 @@
       "mood": "brows_up",
       "text": "Now put that meter in Ann Arbor, October third — a thousand students, twenty-four hours, AWS, Meta, SpaceX, Capital One literally in the room.",
       "cite": ["s4"],
+      "pronunciation": "Say 'AWS' as three separate letters, A-W-S, not as one word.",
       "screen": {
         "type": "meme",
         "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/ai-coding-credit-crunch-roast/screen-memes/line09.png",

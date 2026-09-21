@@ -93,17 +93,39 @@ Field reference:
   - `cite`: array of source `id`s. Non-empty triggers a citation "ding" sfx and defaults the gesture to pointing at the screen. Leave empty/omitted on most lines — this pipeline no longer assumes every line is sourced from an article.
   - `gesture` *(optional)*: see the gesture reference below. If omitted: `point_screen_R`/`point_screen_L` (Nate/Kai respectively) when `cite` is non-empty, else `rest_stand`.
   - `move` *(optional)*: `"pace_out"` (steps away from home mark — good for an opening line) or `"pace_back"`.
-  - `emphasis` *(optional)*: 0-indexed word positions in `text` to vocally/physically emphasize.
+  - `emphasis` *(optional)*: 0-indexed word positions in `text`. These now do double duty: they highlight the words in the YouTube caption bar *and* get named literally in the TTS "Emphasis" field (see below) — e.g. `[16, 18]` on a line makes the model actually try to stress those two specific words, not just "the important ones."
   - `popup` *(optional)*: `{headline, subhead}` — a small secondary callout box, separate from the shared screen, for hammering one stat.
   - `screen` *(optional)*: see step 4. If omitted entirely and `cite` is empty, the screen shows a branded standby card — **never** the line's own caption text.
   - `screens` *(optional)*: timed intra-line screen sequence for longer lines. Each item can be `{ "start_word": 8, "screen": { ... } }` or `{ "at": 2.4, "screen": { ... } }`; use it when a single spoken line needs multiple visuals to stay entertaining and informative.
-  - `voice_instructions` *(optional)*: appended to this line's TTS instructions — use this to set an episode-wide tone override (put the same string on every line) without touching the shared per-speaker defaults.
+  - `pronunciation` *(optional)*: appended to this line's TTS "Pronunciation" field. Use this whenever a specific word is at real risk of coming out wrong or getting misheard as a different word (see "Steering the voice" below) — e.g. `"Say 'AWS' as three separate letters, A-W-S, not as one word."` Most lines don't need this.
+  - `pacing` *(optional)*: overrides the default per-speaker "Pacing" field (e.g. `"Slow way down on the number, then snap back to speed."`).
+  - `pauses` *(optional)*: overrides the default "Pauses" field (e.g. `"A beat of dead air right before 'frozen' — let it land alone."`).
+  - `voice_instructions` *(optional)*: appended as an extra "Additional direction" line in this line's TTS instructions — use this for anything that doesn't fit the Tone/Pacing/Emphasis/Pronunciation/Pauses fields above, or for a one-off delivery note.
 
 Validate before spending any API calls:
 
 ```bash
 python3 character-engine/tools/validate_episode.py character-engine/episodes/<slug>/episode.json
 ```
+
+### Steering the voice — use OpenAI's labeled-instructions technique, not prose
+
+`tools/batch_openai_tts.py` builds each line's `instructions` (the TTS delivery-direction
+field, separate from the spoken `text`) as OpenAI's own documented labeled-field template for
+`gpt-4o-mini-tts` — Voice Affect / Tone / Pacing / Emotion / Emphasis / Pronunciation / Pauses,
+one per line, not one joined paragraph. OpenAI's own cookbook example demonstrates exactly this
+structure and notes the model follows concrete, labeled direction far more reliably than
+freeform tone adjectives. Voice Affect/Tone/Emotion come from the speaker + `mood`
+automatically; `emphasis`/`pronunciation`/`pacing`/`pauses` (above) are how a line overrides
+the rest. You don't need to hand-write the full block — just set the per-line fields that
+matter for that line.
+
+**When a word gets misheard** (a real failure mode — "means" once rendered audibly as
+"memes"), the fix is a `pronunciation` note naming the word and how to say it (e.g. *"Enunciate
+'means' distinctly from 'memes' — crisp final consonant, don't rush it."*), not just rewriting
+around the word. Rewriting around it works too and is zero-cost, but the `pronunciation` field
+is the documented, scalable fix — reach for it first when a specific word is the problem rather
+than the sentence as a whole.
 
 ## 4. Screen content — prefer memes, use real charts only when precision matters
 
@@ -194,3 +216,5 @@ Idempotent — re-running after a re-render overwrites the same filename in Driv
 - `point_screen_R`/`point_screen_L` are frame-relative, not anatomical — don't reason about them as "Nate's right hand."
 - Editing a `screen.prompt` string is what invalidates the meme cache — editing only the rendered PNG by hand won't survive a re-render.
 - The `gdrive:` rclone remote must be configured (`rclone listremotes` should list it) for step 8's Drive sync to work — already set up on this machine as of the port from the original project.
+- Any change to `tools/batch_openai_tts.py`'s instructions template invalidates the TTS cache for **every** line in **every** episode (the cache key includes the full instructions string) — expect a full re-synthesis, not just the line you meant to fix, if you edit the shared template. A per-line `pronunciation`/`pacing`/`pauses`/`voice_instructions`/`emphasis` change only invalidates that one line.
+- If a specific word comes out sounding like a different word, that's a TTS delivery issue, not a rendering bug — fix it with `pronunciation` (see "Steering the voice" above), and re-render just that episode to hear the result before assuming it's fixed.
