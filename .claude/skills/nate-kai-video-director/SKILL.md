@@ -182,7 +182,7 @@ You cannot hear the audio yourself — say so explicitly when reporting, and ask
 Once the render passes QA, upload it so it's reachable from every device:
 
 ```bash
-rclone copy character-engine/output/youtube/<slug>.mp4 "gdrive:Bot That Lyfe Marketing Videos/YouTube/"
+rclone copy character-engine/output/youtube/<slug>.mp4 "gdrive:BTL Marketing Videos/YouTube/"
 ```
 
 Idempotent — re-running after a re-render overwrites the same filename in Drive. This is the last step before reporting the episode finished; don't skip it even for a quick render.

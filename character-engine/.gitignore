@@ -3,6 +3,8 @@
 episodes/*/frames/
 episodes/*/audio/
 episodes/*/screen-memes/
+episodes/*/background.png
+episodes/*/background.png.json
 episodes/*/*.mp4
 episodes/*/*.wav
 episodes/*/*.render.json

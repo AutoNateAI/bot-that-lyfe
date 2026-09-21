@@ -75,7 +75,7 @@ Do the base skill's QA pass, plus:
 Once the render passes QA, upload it so it's reachable from every device:
 
 ```bash
-rclone copy character-engine/output/reels/<slug>.mp4 "gdrive:Bot That Lyfe Marketing Videos/Reels/"
+rclone copy character-engine/output/reels/<slug>.mp4 "gdrive:BTL Marketing Videos/Reels/"
 ```
 
 Idempotent — re-running after a re-render overwrites the same filename in Drive. Requires the `gdrive:` rclone remote (`rclone listremotes` should list it) — already set up on this machine as of the port from the original project. This is the last step before reporting the reel finished.

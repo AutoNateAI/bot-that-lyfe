@@ -1,0 +1,149 @@
+{
+  "episode": "mhacks-fall-2026-roast",
+  "title": "MHacks Fall 2026: A CS Roast",
+  "cta_url": "https://botthatlyfe.com/",
+  "runtime_target_sec": 50,
+  "background_meme": {
+    "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/background.png",
+    "prompt": "A moody late-night campus hackathon floor: rows of glowing laptop screens in a dim auditorium, string lights overhead, soft blue-purple ambient glow, empty energy drink cans on tables, dark negative space in the center/lower half for the hosts, no people, no text, no logos."
+  },
+  "intro_meme": {
+    "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/intro.png",
+    "prompt": "A cracked laptop screen with a single digital sprout growing out of a broken keyboard key, glowing green against a dark navy background, bold white outlined caption exactly reading 'BUILD SOMETHING THAT GROWS'."
+  },
+  "outro_meme": {
+    "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/outro.png",
+    "prompt": "A single green digital sprout growing out of a pile of empty energy drink cans and tangled charging cables, dark navy background, bold white outlined caption exactly reading 'GROWTH, TECHNICALLY'."
+  },
+  "sources": [
+    { "id": "s1", "url": "https://www.mhacks.org/", "fact": "MHacks Fall 2026 runs October 3-4 in Ann Arbor, MI, free to attend, with 1,000+ student builders and sponsors including AWS, Meta, SpaceX, Capital One, and D.E. Shaw & Co.; regular applications closed September 12, 2026." },
+    { "id": "s2", "url": "https://en.wikipedia.org/wiki/MHacks", "fact": "MHacks started in 2012 at the Bob and Betty Beyster Building, grew into the world's largest student-run hackathon and was held at Michigan Stadium, had no event in 2022, and returned in 2023 as MHacks 15." }
+  ],
+  "lines": [
+    {
+      "n": 1,
+      "speaker": "nate",
+      "mood": "smile",
+      "text": "Yoooo, guess what the actual fuck 'build something that grows' means at MHacks.",
+      "gesture": "open_hands",
+      "move": "pace_out",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line01.png",
+        "prompt": "A digital plant made of glowing green bug icons instead of leaves, sprouting from a cracked laptop screen, dark navy background, bold white outlined caption exactly reading 'THIS IS WHAT GROWTH LOOKS LIKE'."
+      }
+    },
+    {
+      "n": 2,
+      "speaker": "kai",
+      "mood": "halflid",
+      "text": "Real growth is your bug count by hour eighteen with zero sleep, my ninja.",
+      "gesture": "shrug",
+      "voice_instructions": "dry, deadpan delivery, especially flat on 'zero sleep'",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line02.png",
+        "prompt": "An exhausted cartoon hacker slumped face-first onto a keyboard at a desk, a huge red digital counter behind them reading '247' labeled 'BUGS', a wall clock showing 4:00, dark room lit only by screen glow, bold white outlined caption exactly reading 'HOUR EIGHTEEN'."
+      }
+    },
+    {
+      "n": 3,
+      "speaker": "nate",
+      "mood": "brows_up",
+      "text": "October third and fourth, Ann Arbor — AWS, Meta, SpaceX, Capital One, all in the building.",
+      "cite": ["s1"],
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line03.png",
+        "prompt": "A row of generic corporate recruiting booths with plain blank banner signs, no logos, no brand names, a line of exhausted students in hoodies waiting, a judge in a blazer holding a clipboard and stopwatch, dark convention-hall lighting, bold white outlined caption exactly reading 'THEY'RE WATCHING'."
+      }
+    },
+    {
+      "n": 4,
+      "speaker": "kai",
+      "mood": "smile",
+      "text": "So the 'garden' is really a demo table where your app crashes in front of a SpaceX engineer.",
+      "gesture": "explain_chop",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line04.png",
+        "prompt": "A hackathon demo table with a laptop displaying a bright red crash error screen, a small potted plant with a wilted brown leaf next to it, a garden trowel on the table, dark stage lighting, bold white outlined caption exactly reading 'APP.EXE STOPPED GROWING'."
+      }
+    },
+    {
+      "n": 5,
+      "speaker": "nate",
+      "mood": "neutral",
+      "text": "And you just smile like that wasn't the whole-ass presentation.",
+      "gesture": "rest_stand",
+      "voice_instructions": "flat, disbelieving delivery",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line05.png",
+        "prompt": "Extreme close-up cartoon face with a huge forced fake smile, beads of sweat flying off, a tiny reflection of a red crash screen visible in the glasses lenses, dark background, bold white outlined caption exactly reading 'TOTALLY FINE'."
+      }
+    },
+    {
+      "n": 6,
+      "speaker": "kai",
+      "mood": "brows_up",
+      "text": "This thing started 2012 in the Beyster Building — blew up so big it took over Michigan Stadium.",
+      "cite": ["s2"],
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line06.png",
+        "prompt": "A split-panel illustration: left side a small cramped room with three laptops glowing, right side the same scene exploded into a massive packed football stadium full of glowing laptop screens under stadium lights, dark navy background, bold white outlined caption exactly reading 'ONE ROOM TO THE BIG HOUSE'."
+      }
+    },
+    {
+      "n": 7,
+      "speaker": "nate",
+      "mood": "halflid",
+      "text": "Then it just flatlined. No MHacks in 2022. Straight-up dead.",
+      "gesture": "shrug",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line07.png",
+        "prompt": "A cartoon tombstone shaped like a laptop screen in an empty dark graveyard, cobwebs draped across the keyboard, a single dead vine wrapped around it, faint moonlight, bold white outlined caption exactly reading 'MHACKS 2022: NONE'."
+      }
+    },
+    {
+      "n": 8,
+      "speaker": "kai",
+      "mood": "smile",
+      "text": "Came back in 2023 swinging — beautiful story. Except regular applications already closed September twelfth.",
+      "cite": ["s1", "s2"],
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line08.png",
+        "prompt": "A glowing green sprout bursting up out of cracked earth in the shape of a laptop, a giant red rubber stamp slamming down on top of it reading exactly 'CLOSED', dark navy background, bold white outlined caption exactly reading 'REBORN. ALSO CLOSED.'"
+      }
+    },
+    {
+      "n": 9,
+      "speaker": "nate",
+      "mood": "brows_up",
+      "text": "So if you're hyped watching this, my ninja, you already missed the boat. That's not growth, that's a rain check.",
+      "gesture": "open_hands",
+      "voice_instructions": "land the punchline hard on 'rain check'",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line09.png",
+        "prompt": "A small wooden dock at night, a single cartoon figure in a hoodie standing alone holding a laptop, watching a boat strung with lights sail away into the dark distance, bold white outlined caption exactly reading 'SEPT 12TH LEFT WITHOUT YOU'."
+      }
+    },
+    {
+      "n": 10,
+      "speaker": "kai",
+      "mood": "smile",
+      "text": "Doesn't matter. The grind's the same whether you're in that room or not — question is whether you look the part.",
+      "gesture": "rest_stand",
+      "move": "pace_back",
+      "screen": {
+        "type": "meme",
+        "path": "/Users/autonate/code/bot-that-lyfe/character-engine/episodes/mhacks-fall-2026-roast/screen-memes/line10.png",
+        "prompt": "A hoodie draped over an empty desk chair next to a glowing laptop at night, a single green sprout growing out of the laptop's cracked corner, warm desk lamp light, dark room, bold white outlined caption exactly reading 'THE GRIND DOESN'T CHECK RSVPS'."
+      }
+    }
+  ]
+}
