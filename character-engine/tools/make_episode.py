@@ -82,7 +82,7 @@ def cta_url_for(ep):
     scripts (not derived from a published article), so this defaults to the
     storefront root; set an explicit `cta_url` in episode.json to point a
     given episode at a specific drop/product/campus page instead."""
-    return ep.get("cta_url") or "https://botthatlyfe.com/"
+    return ep.get("cta_url") or "https://shop.botthatlyfe.com/"
 
 
 # ---------------------------------------------------------------- character assets

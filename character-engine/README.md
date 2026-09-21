@@ -7,7 +7,7 @@ manual animation.
 
 Ported from an internal AutoNateAI project (`roblox-gamelab-2/apps/marketplace`)
 and rebranded for Bot That Lyfe: the on-screen show name is "Higher Thinking",
-the brand tag is "BTL", and the outro card defaults to linking `botthatlyfe.com`.
+the brand tag is "BTL", and the outro card defaults to linking `shop.botthatlyfe.com`.
 The engine itself is unmodified — only branding text and the two Claude skills
 that drive it changed. See `.claude/skills/nate-kai-video-director/SKILL.md`
 and `.claude/skills/nate-kai-reel-director/SKILL.md` at the repo root for the
